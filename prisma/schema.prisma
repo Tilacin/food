@@ -97,15 +97,3 @@ model VerificationToken {
   @@unique([identifier, token])
 }
 
-model Day {
-  id        String @id @default(cuid())
-  name      String // понедельник, вторник, ...
-  dayOfWeek Int // @смотрите документацию по getDay(), 0 для воскресенья, 1 для понедельника, ...
-  openTime  String
-  closeTime String
-}
-
-model ClosedDay {
-  id   String   @id @default(cuid())
-  date DateTime @unique
-}

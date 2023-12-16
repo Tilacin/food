@@ -17,7 +17,7 @@ export const products: Products = [
     title: "Вафельное печенье",
     desc: "Вафельное печенье - это кондитерское изделие, которое готовится из вафельного теста. Оно может быть покрыто шоколадом, орехами или другими начинками.",
     img: "/dishes/dessert1.jpg",
-    price: 24.9,
+    price: 24,
     category: "desserts",
   },
   {
@@ -81,7 +81,7 @@ export const products: Products = [
     title: "Макиато",
     desc: "Макиато - Кофейный напиток, изготавливаемый путем добавления к эспрессо минимального количества молока, обычно взбитого.",
     img: "/dishes/drink1.jpg",
-    price: 4.9,
+    price: 4,
     category: "drinks",
   },
   {

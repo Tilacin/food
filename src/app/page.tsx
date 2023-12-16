@@ -8,12 +8,13 @@ export default function Home() {
     <>
       <main className="bg-amber-400 ">
         <div className="w-full ">
-          <div className="bg-black flex  flex-wrap max-[650px]:flex-col ">
-          <div>
+        <div>
             <Link className={buttonVariants()} href="/dashboard">
               Перейти в админку
             </Link>
           </div>
+          <div className="bg-black flex  flex-wrap max-[650px]:flex-col ">
+          
             <div className="w-1/2  max-[650px]:w-full mt-8 text-center ">
               <div className="flex flex-wrap items-center justify-center">
                 <h1 className="text-5xl font-bold text-yellow-400 ">
@@ -51,7 +52,7 @@ export default function Home() {
             </div>
 
             <div className=" w-1/2 max-[650px]:w-4/5 ">
-              <Image src="/delivery.png" alt="" width={500} height={500} />
+              <Image src="/delivery.png" alt="" width={500} height={500} priority={true}/>
             </div>
           </div>
           

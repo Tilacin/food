@@ -4,7 +4,6 @@ CREATE TABLE "Category" (
     "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "title" TEXT NOT NULL,
     "desc" TEXT NOT NULL,
-    "color" TEXT NOT NULL,
     "img" TEXT NOT NULL,
     "slug" TEXT NOT NULL,
 
@@ -35,6 +34,7 @@ CREATE TABLE "Order" (
     "status" TEXT NOT NULL,
     "intent_id" TEXT,
     "userEmail" TEXT NOT NULL,
+    "address" TEXT,
 
     CONSTRAINT "Order_pkey" PRIMARY KEY ("id")
 );
@@ -147,3 +147,4 @@ ALTER TABLE "Account" ADD CONSTRAINT "Account_userId_fkey" FOREIGN KEY ("userId"
 
 -- AddForeignKey
 ALTER TABLE "Session" ADD CONSTRAINT "Session_userId_fkey" FOREIGN KEY ("userId") REFERENCES "User"("id") ON DELETE CASCADE ON UPDATE CASCADE;
+
