@@ -8,11 +8,7 @@ export default function Home() {
     <>
       <main className="bg-amber-400 ">
         <div className="w-full ">
-        <div>
-            <Link className={buttonVariants()} href="/dashboard">
-              Перейти в админку
-            </Link>
-          </div>
+        
           <div className="bg-black flex  flex-wrap max-[650px]:flex-col ">
           
             <div className="w-1/2  max-[650px]:w-full mt-8 text-center ">
